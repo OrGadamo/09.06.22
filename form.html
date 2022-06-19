@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <form id="new_form" onsubmit="return checkForm()">
+      <h1>Sign Up Form</h1>
+      <label id="firstname_label" for="firstname">First Name:</label>
+      <input
+        required
+        maxlength="10"
+        placeholder="Enter First Name"
+        id="firstname_input"
+        name="firstname"
+        type="text"
+      />
+
+      <label id="lastname_label" for="lastname">Last Name:</label>
+      <input
+        required
+        placeholder="Enter Last Name"
+        id="lastname_input"
+        name="lastname"
+        type="text"
+      />
+
+      <label id="birthday_label" for="birthday">Date Of Birth:</label>
+      <input id="birthdate_input" name="birthday" type="date" />
+
+      <label id="email_label" for="useremail">Email:</label>
+      <input
+        placeholder="example@gmail.com"
+        id="email_input"
+        name="useremail"
+        type="email"
+      />
+
+      <label id="phone_label" for="phonenumber">Phone Number:</label>
+      <input
+        placeholder="Enter Phone Number"
+        id="phone_input"
+        name="phonenumber"
+        type="tel"
+      />
+
+      <label id="password_label" for="password">Password:</label>
+      <input
+        placeholder="Enter Password"
+        id="password_input"
+        name="password"
+        type="password"
+      />
+
+      <label id="confirmpass_label" for="confirmpass">Confirm Password:</label>
+      <input
+        placeholder="Enter Password"
+        id="confirmpass_input"
+        name="confirmpass"
+        type="password"
+      />
+      <button id="submit_button">SUBMIT</button>
+    </form>
+    <script src="form.js"></script>
+  </body>
+</html>
